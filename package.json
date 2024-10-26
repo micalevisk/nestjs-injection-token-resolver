@@ -1,0 +1,57 @@
+{
+  "name": "nestjs-injection-token-resolver",
+  "version": "1.0.0",
+  "description": "A tiny utility to standardize the injection token recovery among NestJS libraries.",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc --project ./tsconfig.json",
+    "release:check": "semantic-release --dry-run",
+    "release": "semantic-release",
+    "test": "node test/injection-token-from.spec.mjs"
+  },
+  "keywords": [
+    "nestjs"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "author": "Micael Levi L. C.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micalevisk/nestjs-conditional-exception-filter/issues"
+  },
+  "homepage": "https://github.com/micalevisk/nestjs-conditional-exception-filter#readme",
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ],
+    "branches": [
+      "main"
+    ]
+  },
+  "devDependencies": {
+    "@nestjs/bull": "^10.2.1",
+    "@nestjs/common": "^10.4.6",
+    "@nestjs/typeorm": "^10.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@types/node": "^22.8.1",
+    "reflect-metadata": "^0.2.2",
+    "semantic-release": "^24.2.0",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "reflect-metadata": "*"
+  }
+}
