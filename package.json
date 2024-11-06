@@ -1,6 +1,6 @@
 {
   "name": "nestjs-injection-token-resolver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tiny utility to standardize the injection token recovery among NestJS libraries.",
   "type": "commonjs",
   "main": "dist/injection-token-from.js",
