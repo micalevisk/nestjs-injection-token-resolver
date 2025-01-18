@@ -43,14 +43,14 @@
     ]
   },
   "devDependencies": {
-    "@nestjs/bull": "^10.2.1",
-    "@nestjs/common": "^10.4.6",
-    "@nestjs/typeorm": "^10.0.2",
+    "@nestjs/bull": "^11.0.0",
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/typeorm": "^11.0.0",
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "^22.8.1",
+    "@types/node": "^22.10.7",
     "reflect-metadata": "^0.2.2",
-    "semantic-release": "^24.2.0",
-    "typescript": "^5.6.3"
+    "semantic-release": "^24.2.1",
+    "typescript": "^5.7.3"
   },
   "peerDependencies": {
     "reflect-metadata": "*"
